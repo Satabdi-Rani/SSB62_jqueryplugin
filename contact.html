@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/tiltedpage-scroll.css">     // tilted page-->
+    <link rel="stylesheet" href="css/animsition.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>JQuery Plugin</title>
+  </head>
+  <body>
+
+   <!-- **************************tilted page***********************************  -->
+   <!--  <div class="container">  
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main">
+            <section class="page1">
+               <img src="images/20161225_170609.jpg" class="img-fluid" alt="">
+            </section>
+            <section class="page2">
+                <img src="images/20161225_170609.jpg" class="img-fluid" alt="">
+            </section>
+            
+            <section class="last-page">
+              <img src="images/20161225_170609.jpg" class="img-fluid" alt="">
+            </section>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+<!-- ************************counter up*********************** -->
+   <!--  <div class="container">  
+      <div class="row">
+        <div class="col-md-12">
+          <span class="counter">1,234,567.00</span>
+          <span>$</span><span class="counter">1.99</span>
+          <span class="counter">12345</span>
+        </div>
+      </div>
+    </div>  -->
+
+
+<!-- ************************Animstion**************************** -->
+    <div class="container">  
+      <div class="row">
+        <div class="col-md-12">
+           <div class="animsition">
+              <a href="index.html" class="animsition-link">animsition link 1</a>
+              <a href="contact.html" class="animsition-link">animsition link 2</a>
+            </div>
+        </div>
+      </div>
+    </div> 
+    
+  
+   
+
+
+
+
+
+
+
+    <!-- jQuery  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>   //counter up --> 
+    <script src="js/bootstrap.min.js"></script>
+     <!-- <script src="js/jquery.tiltedpage-scroll.js"></script>    //tilted page -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>     //cunter up-->
+    <!-- <script src="js/jquery.counterup.js"></script>       //counter up-->  
+     <script src="js/animsition.js"></script>      
+    <script src="js/script.js"></script> 
+
+<!-- **********************tilted page********************************* -->
+   <!--  <script>
+       $(".main").tiltedpage_scroll({
+            sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+            angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+            opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+            scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+            outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+          });
+    </script> -->
+
+<!-- *******************************counter up**************************** -->
+  <!--   <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+     </script> -->
+
+<!-- *************************Animstion************************ -->
+     <script>
+       $(document).ready(function() {
+            $(".animsition").animsition({
+              inClass: 'fade-in-right-sm',
+              outClass: 'fade-out-right-sm',
+              inDuration: 1500,
+              outDuration: 800,
+              linkElement: '.animsition-link',
+              // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+              loading: true,
+              loadingParentElement: 'body', //animsition wrapper element
+              loadingClass: 'animsition-loading',
+              loadingInner: '', // e.g '<img src="loading.svg" />'
+              timeout: false,
+              timeoutCountdown: 5000,
+              onLoadEvent: true,
+              browser: [ 'animation-duration', '-webkit-animation-duration'],
+              // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+              // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+              overlay : false,
+              overlayClass : 'animsition-overlay-slide',
+              overlayParentElement : 'body',
+              transition: function(url){ window.location.href = url; }
+            });
+          });
+     </script>
+  </body>
+</html>
